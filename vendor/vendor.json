@@ -3,10 +3,10 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "bob2j0kMkESRSdwaOxJ6oHJIcw8=",
+			"checksumSHA1": "gCPMbHnul0ckV5T0IBC7X0MgdaI=",
 			"path": "github.com/fernand-o/go-bot-custom-responses-plugin",
-			"revision": "8823632473938d3a294c89751d6e361924587add",
-			"revisionTime": "2018-05-19T04:45:25Z"
+			"revision": "2998f40bd6ee3e0bb0fe1223b5652c6050fe5805",
+			"revisionTime": "2018-05-19T05:41:34Z"
 		},
 		{
 			"checksumSHA1": "XXvvxzyiDfFb4EIzaPDKxqJmprE=",
