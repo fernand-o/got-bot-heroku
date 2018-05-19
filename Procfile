@@ -1,1 +1,1 @@
-worker: go-bot-heroku
+web: go-bot-heroku
