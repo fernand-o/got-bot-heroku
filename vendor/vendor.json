@@ -3,6 +3,12 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "kdFQGm/D57EUr55TL3a7Xap5JmU=",
+			"path": "github.com/fernand-o/go-bot-custom-responses-plugin",
+			"revision": "604c81223af65211cf8d11ea2a6ee7b7102ad7f2",
+			"revisionTime": "2018-05-18T22:49:52Z"
+		},
+		{
 			"checksumSHA1": "XXvvxzyiDfFb4EIzaPDKxqJmprE=",
 			"path": "github.com/go-chat-bot/bot",
 			"revision": "3cda8d6c8953a59c4a95f5be810755805d36e7ee",
@@ -13,6 +19,54 @@
 			"path": "github.com/go-chat-bot/bot/slack",
 			"revision": "3cda8d6c8953a59c4a95f5be810755805d36e7ee",
 			"revisionTime": "2018-03-18T12:59:23Z"
+		},
+		{
+			"checksumSHA1": "Mom4aDBDTlunU3+qc3QQP/r48OE=",
+			"path": "github.com/go-redis/redis",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
+		},
+		{
+			"checksumSHA1": "L/n8TwOiRwhhL2TvFNafxB6rAwY=",
+			"path": "github.com/go-redis/redis/internal",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
+		},
+		{
+			"checksumSHA1": "GQZsUVg/+6UpQAYpc4luMvMutSI=",
+			"path": "github.com/go-redis/redis/internal/consistenthash",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
+		},
+		{
+			"checksumSHA1": "GE9tg94JwCzMbBwn3Q2LaFs5Rx0=",
+			"path": "github.com/go-redis/redis/internal/hashtag",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
+		},
+		{
+			"checksumSHA1": "AtcctlDri3zLh6U5sDnT4NULEtw=",
+			"path": "github.com/go-redis/redis/internal/pool",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
+		},
+		{
+			"checksumSHA1": "2DZs/18lBWzZk2rxWLVtPUzNXhs=",
+			"path": "github.com/go-redis/redis/internal/proto",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
+		},
+		{
+			"checksumSHA1": "sjbjSJrTdvyDwNjrWjTNeXgUhaU=",
+			"path": "github.com/go-redis/redis/internal/singleflight",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
+		},
+		{
+			"checksumSHA1": "SvyqZrzHTVxCIBoawql2ucvfWLE=",
+			"path": "github.com/go-redis/redis/internal/util",
+			"revision": "18b2e30835f248bffe475cb69c7267204de1bc1e",
+			"revisionTime": "2018-05-17T12:21:51Z"
 		},
 		{
 			"checksumSHA1": "mB5P3/XIC7r4Jc0/K86NA9Jq2CA=",
