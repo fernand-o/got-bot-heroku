@@ -1,1 +1,1 @@
-web: go-bot
+worker: go-bot
