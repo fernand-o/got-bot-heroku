@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	argumentsExample = "Usage: \n !responses set 'Is someone there?' 'Hello' \n !responses unset 'Is someone there?' \n !responses list"
+	argumentsExample = "Usage: \n !responses set \"Is someone there?\" \"Hello\" \n !responses unset \"Is someone there?\" \n !responses list"
 	invalidArguments = "Please inform the params, ex:"
 )
 
@@ -71,10 +71,28 @@ func userMessageNoResposesDefined() string {
 	return fmt.Sprintf("There's no responses defined yet. \n %s", argumentsExample)
 }
 
-func listResponses(param string) string {
-	if param != "list" {
-		return argumentsExample
+func userMessageResponsesDeleted() string {
+	return "All responses were deleted."
+}
+
+func listOrClearResponses(param string) (msg string) {
+	switch param {
+	case "list":
+		msg = listResponses()
+	case "clear":
+		msg = clearResponses()
+	default:
+		msg = argumentsExample
 	}
+	return
+}
+
+func clearResponses() string {
+	RedisClient.FlushDB()
+	return userMessageResponsesDeleted()
+}
+
+func listResponses() string {
 	if len(Keys) == 0 {
 		return userMessageNoResposesDefined()
 	}
@@ -100,15 +118,17 @@ func unsetResponse(param, match string) string {
 func responsesCommand(command *bot.Cmd) (msg string, err error) {
 	switch len(command.Args) {
 	case 1:
-		msg = listResponses(command.Args[0])
+		loadKeys()
+		msg = listOrClearResponses(command.Args[0])
 	case 2:
 		msg = unsetResponse(command.Args[0], command.Args[1])
+		loadKeys()
 	case 3:
 		msg = setResponse(command.Args)
+		loadKeys()
 	default:
 		msg = argumentsExample
 	}
-	loadKeys()
 	return
 }
 
