@@ -1,18 +1,11 @@
 ## Overview
 A plugin for [go-bot](https://github.com/go-chat-bot/bot) that allows defining custom bot responses for given matches
 
-## Available commands
+## Available commands & Examples
 ```
-!responses set match response
-!responses unset match
-!responses list
-!responses clear
-```
-
-# Examples
-```
-!responses set "why did the chicken cross the road?" "to get to the other side"
-!responses set "Error processing request of user fernando.almeida" "Hey @fernando, take a look"
+!responses match set "why did the chicken cross the road?" "to get to the other side"
+!responses match set "Error processing request of user fernando.almeida" "Hey @fernando, take a look"
+!responses match unset
 ```
 
 ### To-do:
@@ -28,5 +21,7 @@ A plugin for [go-bot](https://github.com/go-chat-bot/bot) that allows defining c
 - [x] Create command to delete defined responses -> (!responses unset)
 - [x] Create command to delete all responses -> (!responses list)
 - [x] List responses formatted
-- [ ] Define lists with random responses to send combined with the defined response
+- [x] Define lists with random responses to send combined with the defined response
+- [ ] Send a random item list with the message
+- [ ] Fix delete list command
 - [ ] Create an easier way of deleting responses
